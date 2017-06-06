@@ -1,0 +1,23 @@
+{
+  "name": "mraidsdk",
+  "version": "1.0.0",
+  "description": "mraid sdk",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jresuento/MRAIDSDK.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jresuento/MRAIDSDK/issues"
+  },
+  "homepage": "https://github.com/jresuento/MRAIDSDK#readme"
+}
