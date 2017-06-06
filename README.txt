@@ -1,3 +1,5 @@
+npm install
+
 top:
 node node_modules/http-server/bin/http-server -a localhost -p 9001 -c-1 ./exercises
 
