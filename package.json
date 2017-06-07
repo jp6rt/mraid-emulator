@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jresuento/MRAIDSDK.git"
+    "url": "git+https://github.com/jresuento/MRAIDSDK_Browser_Emulator.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jresuento/MRAIDSDK/issues"
+    "url": "https://github.com/jresuento/MRAIDSDK_Browser_Emulator/issues"
   },
-  "homepage": "https://github.com/jresuento/MRAIDSDK#readme"
+  "homepage": "https://github.com/jresuento/MRAIDSDK_Browser_Emulator#readme"
 }
