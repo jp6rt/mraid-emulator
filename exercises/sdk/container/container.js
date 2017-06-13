@@ -10,7 +10,11 @@
 		e : EventMgr,
 		d : divhelper
 	};	
-	$c.c = $w.$container || {};
+	$c.c = $w.$container || {},
+	$c.sTs = {
+		d : 'default',
+		e : 'expanded'
+	}
 	$c.cM = function(a, b, c){
 		$s = this;
 		$s.wR = !1, 
@@ -18,6 +22,7 @@
 		$s.p.pT = a,
 		$s.w = b,
 		$s.h = c,
+		$s.sT = $c.sTs.d,
 		$s.e = new $d.e,
 		$s.e.i($c.c.m),
 		$s.iE(),
@@ -115,12 +120,14 @@
 				data : $s.p
 			})
 		},
-		hE : function(){			
+		hE : function(){		
+			$s.sT = $c.sTs.e;
 			$d.d.p($s.wV, 'fullscreen');
 			$s.e.d($c.c.m.uP);
 			$s.e.d($c.c.m.sC, 'expanded');
 		},
 		hC : function(){
+			$s.sT = $c.sTs.d;
 			$d.d.p($s.wV, 'center', 'bottom', $s.w, $s.h);
 			$s.e.d($c.c.m.uP);
 			$s.e.d($c.c.m.sC, 'default');
@@ -136,16 +143,20 @@
 		},
 		iuP : function(){
 			var a = $d.v.g(),
-			b = $s.wV.getBoundingClientRect();
+			b = $s.wV.getBoundingClientRect(),
+			c = {
+				width : $s.sT == $c.sTs.e ? a.width : b.width,
+				height : $s.sT == $c.sTs.e ? a.height : b.height,
+				left : b.left,
+				top : b.top
+			};
 			$s.p.dP = {
-				width : $s.w, height : $s.h, x : b.left, y : b.top
+				width : $s.w, height : $s.h, x : c.left, y : c.top
 			}
 			$s.p.mS = {
 				width : a.width, height: a.height
-			}
-			$s.p.cP = {
-				width : $s.w, height : $s.h, x : b.left, y : b.top
-			}
+			}			
+			$s.p.cP = c
 			$s.p.sS = {
 				width : a.width, height: a.height
 			}
