@@ -14,7 +14,8 @@
 	$c.sTs = {
 		d : 'default',
 		e : 'expanded'
-	}
+	},
+	$c.wVP = $d.u.f('http://10.10.53.112:9002/{0}/webview/index.html', 'sdk'),
 	$c.cM = function(a, b, c){
 		$s = this;
 		$s.wR = !1, 
@@ -56,7 +57,7 @@
 			var a = document,
 			b = a.getElementsByTagName,
 			c = a.createElement,
-			d = 'http://localhost:9002/sdk/webview/index.html',
+			d = $c.wVP,
 			e = 'style',
 			f = 'width',
 			g = 'height',
