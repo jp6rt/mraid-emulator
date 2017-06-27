@@ -6,3 +6,6 @@ node node_modules/http-server/bin/http-server -p 9001 -c-1 ./exercises
 
 --open cmd and run the webview server
 node node_modules/http-server/bin/http-server -p 9002 -c-1 ./exercises
+
+--browse through page
+http://127.0.0.1:9001/sdk/container/
