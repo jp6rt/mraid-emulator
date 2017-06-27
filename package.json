@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "mraid sdk browser emulator",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {   
+  },
+  "devDependencies": {
     "http-server": "^0.9.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "exit 1"
   },
